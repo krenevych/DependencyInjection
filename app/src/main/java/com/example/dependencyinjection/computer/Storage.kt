@@ -1,6 +1,8 @@
 package com.example.dependencyinjection.computer
 
-class Storage {
+import javax.inject.Inject
+
+class Storage @Inject constructor(){
 
 
     override fun toString(): String {

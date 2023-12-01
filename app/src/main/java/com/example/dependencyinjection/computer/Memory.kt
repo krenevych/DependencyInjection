@@ -1,6 +1,8 @@
 package com.example.dependencyinjection.computer
 
-class Memory {
+import javax.inject.Inject
+
+class Memory @Inject constructor(){
 
 
     override fun toString(): String {

@@ -12,5 +12,6 @@ class MainActivity: AppCompatActivity() {
 
         val activity = Activity()
         activity.computer.toString()
+        activity.keyboard.toString()
     }
 }

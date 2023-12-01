@@ -1,6 +1,8 @@
 package com.example.dependencyinjection.computer
 
-class Monitor {
+import javax.inject.Inject
+
+class Monitor @Inject constructor(){
 
 
     override fun toString(): String {
