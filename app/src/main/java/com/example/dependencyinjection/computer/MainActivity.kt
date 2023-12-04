@@ -1,9 +1,8 @@
-package com.example.dependencyinjection
+package com.example.dependencyinjection.computer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dependencyinjection.computer.Activity
-import com.example.dependencyinjection.computer.Computer
+import com.example.dependencyinjection.R
 
 class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
