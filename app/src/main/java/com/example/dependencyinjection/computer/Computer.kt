@@ -1,8 +1,6 @@
 package com.example.dependencyinjection.computer
 
-import javax.inject.Inject
-
-class Computer @Inject constructor(
+class Computer(
     val systemTower: SystemTower,
     val monitor: Monitor,
     val keyboard: Keyboard,

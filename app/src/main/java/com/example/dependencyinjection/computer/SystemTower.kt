@@ -2,7 +2,7 @@ package com.example.dependencyinjection.computer
 
 import javax.inject.Inject
 
-class SystemTower @Inject constructor(
+class SystemTower(
     val memory: Memory,
     val processor: Processor,
     val storage: Storage,

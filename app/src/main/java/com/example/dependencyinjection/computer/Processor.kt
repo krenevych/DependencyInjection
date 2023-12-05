@@ -2,7 +2,7 @@ package com.example.dependencyinjection.computer
 
 import javax.inject.Inject
 
-class Processor @Inject constructor(){
+class Processor{
 
 
     override fun toString(): String {

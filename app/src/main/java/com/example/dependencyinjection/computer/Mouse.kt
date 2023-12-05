@@ -1,8 +1,6 @@
 package com.example.dependencyinjection.computer
 
-import javax.inject.Inject
-
-class Mouse @Inject constructor(){
+class Mouse{
 
 
     override fun toString(): String {

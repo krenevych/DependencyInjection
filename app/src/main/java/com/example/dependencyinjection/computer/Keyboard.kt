@@ -1,8 +1,6 @@
 package com.example.dependencyinjection.computer
 
-import javax.inject.Inject
-
-class Keyboard @Inject constructor() {
+class Keyboard {
 
 
     override fun toString(): String {
