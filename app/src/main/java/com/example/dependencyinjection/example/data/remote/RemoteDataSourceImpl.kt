@@ -1,6 +1,8 @@
 package com.example.dependencyinjection.example.data.remote
 
-class RemoteDataSourceImpl(
+import javax.inject.Inject
+
+class RemoteDataSourceImpl @Inject constructor(
     private val apiService: ApiService
 ) : RemoteDataSource {
 

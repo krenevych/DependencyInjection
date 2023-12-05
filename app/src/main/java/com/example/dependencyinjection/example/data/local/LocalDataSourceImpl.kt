@@ -1,6 +1,8 @@
 package com.example.dependencyinjection.example.data.local
 
-class LocalDataSourceImpl(
+import javax.inject.Inject
+
+class LocalDataSourceImpl @Inject constructor(
     private val database: Database
 ) : LocalDataSource {
 

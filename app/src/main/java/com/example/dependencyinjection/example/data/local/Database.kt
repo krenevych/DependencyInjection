@@ -1,11 +1,13 @@
 package com.example.dependencyinjection.example.data.local
 
 import android.util.Log
+import javax.inject.Inject
 
-class Database {
+class Database @Inject constructor() {
 
     fun method() {
         Log.d(TAG, "DataBase")
+
     }
 
     companion object {
