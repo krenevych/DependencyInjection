@@ -1,29 +1,20 @@
 package com.example.dependencyinjection.example.di
 
-import com.example.dependencyinjection.example.data.Mapper
 import com.example.dependencyinjection.example.data.RepositoryImpl
-import com.example.dependencyinjection.example.data.local.LocalDataSource
-import com.example.dependencyinjection.example.data.remote.RemoteDataSource
 import com.example.dependencyinjection.example.domain.Repository
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 
 @Module
-class DomainModule {
+interface DomainModule {
 
-    @Provides
-    fun provideRepository(
-        localDataSource: LocalDataSource,
-        remoteDataSource: RemoteDataSource,
-        mapper: Mapper
+    @Binds
+    fun provideRepository(repository: RepositoryImpl): Repository
 
-    ) : Repository {
-        return RepositoryImpl(
-            localDataSource,
-            remoteDataSource,
-            mapper
-        )
-    }
-
+//    @Provides
+//    fun provideRepository(repository: RepositoryImpl): Repository {
+//        return repository
+//    }
 
 }
